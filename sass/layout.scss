@@ -1,0 +1,7 @@
+@import "extend";
+@import "setting";
+.hm-tab-contain {
+  &{
+    padding: pxToRem($headHeight) 0 pxToRem($footHeight) 0;
+  }
+}

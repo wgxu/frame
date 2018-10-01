@@ -1,0 +1,17 @@
+@import "extend";
+@import "setting";
+//头部样式
+.hm-head {
+  & {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: pxToRem($headHeight);
+    background-color: $headBackgroud;
+    z-index: 99;
+    color: $headColor;
+  }
+}
+
+

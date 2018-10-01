@@ -1,0 +1,12 @@
+@import "extend";
+@import "setting";
+
+.hm-foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: $footHeight;
+  background-color: $footBackgroud;
+  color: $footColor;
+}

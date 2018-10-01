@@ -6,10 +6,10 @@ const gulp = require('gulp'),
 
 
 gulp.task('sass',function(){
-    return gulp.src('./scss/*.scss')
+    return gulp.src('./sass/*.scss')
         .pipe(sass())
-        .pipe(concat('module.css'))
-        .pipe(gulp.dest('./public/static/css'))
+        .pipe(concat('hm.css'))
+        .pipe(gulp.dest('./build/css'))
         .pipe(autoprefixer({
             browsers:  [
                 "> 1%",
@@ -25,5 +25,5 @@ gulp.task('sass',function(){
 
 gulp.task('default',function(){
     gulp.start('sass');
-    gulp.watch('./scss/*.scss',['sass']);
+    gulp.watch('./sass/*.scss',['sass']);
 });

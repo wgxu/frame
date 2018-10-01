@@ -1,0 +1,7 @@
+$htmlFontSize: 46.875px;
+$bodyFontSize: 24px;
+
+//pixles to rems
+@function  pxToRem($px) {
+  @return $px / $htmlFontSize * 1rem;
+}

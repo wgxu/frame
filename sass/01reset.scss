@@ -1,0 +1,68 @@
+@import "extend";
+@import "setting";
+body {
+  font-family: "Microsoft YaHei";
+  font-size: $bodyFontSize;
+}
+.hide {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul, li {
+  list-style: none;
+}
+.text-center {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  outline: none;
+}
+input, textarea, select {
+  border: 0;
+  outline: none;
+  resize: none;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+}
+textarea {
+  resize: vertical;
+  resize: none;
+}
+em, i, strike {
+  font-style: normal;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+}
+.text-r {
+  text-align: right;
+}
+.ell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.no-border {
+  border: none !important;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+  display: none;
+}
